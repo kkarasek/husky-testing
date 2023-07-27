@@ -13,10 +13,10 @@ The branch name \033[1;31m$current_branch_name\033[0m does not adhere to the sem
 eg. \033[1;32m$branch_example1\033[0m or \033[1;32m$branch_example2\033[0m
 Please rename your branch accordingly and try again."
 
-# if ! echo "$current_branch_name" | grep -Eq $branch_name_regex
-# then
-#   echo -e "$invalid_branch_message"
-#   exit 1
-# fi
+if ! echo "$current_branch_name" | grep -Eq $branch_name_regex
+then
+  echo -e "$invalid_branch_message"
+  exit 1
+fi
 
 exit 0;
