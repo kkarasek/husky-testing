@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_branch_name=$(git rev-parse --abbrev-ref HEAD)
+jira_id_regex="MSSDK-[[:digit:]]+"
+jira_id=$(printf "$current_branch_name" | grep -Eo $jira_id_regex)
+
+current_commit_name=$(cat $HUSKY_GIT_PARAMS)
+
+echo $current_commit_name
+
+exit 1
