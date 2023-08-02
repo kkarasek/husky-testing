@@ -1,7 +1,7 @@
 #!/bin/bash
 
 branch_name_regex='^branch-\d+$'
-external_branch_name_regex='^branch-external((-[[:alnum:]]+)+)$l'
+external_branch_name_regex='^branch-external((-[[:alnum:]]+)+)$'
 current_branch_name="$(git rev-parse --abbrev-ref HEAD)"
 branch_template="branch-<number>"
 external_branch_template="<branch-external>-<brief-description>"
