@@ -16,7 +16,7 @@ eg. \033[1;32m$branch_example1\033[0m or \033[1;32m$branch_example2\033[0m
 
 Please rename your branch accordingly and try again."
 
-if ! echo "$current_branch_name" | grep -Eq $branch_name_regex | $external_branch_name_regex
+if ! echo "$current_branch_name" | grep -Eq $branch_name_regex
 then
   echo -e "$invalid_branch_message"
   exit 1
