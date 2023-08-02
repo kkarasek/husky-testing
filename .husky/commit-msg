@@ -1,8 +1,6 @@
 #!/bin/bash
 
 current_branch_name=$(git rev-parse --abbrev-ref HEAD)
-# jira_id_regex="branch-[[:digit:]]+"
-# jira_id=$(printf "$current_branch_name" | grep -Eo $jira_id_regex)
 
 current_commit_name=$(cat $1)
 commit_name_regex="^(chore|docs|feat|fix|refactor|style|test):[[:space:][:alnum:]]+"
