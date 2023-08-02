@@ -7,14 +7,15 @@ branch_template="branch-<number>"
 external_branch_template="<branch-external>-<brief-description>"
 branch_example1="branch-2"
 branch_example2="branch-11"
+external_branch_example="branch-external-add-new-button"
 
 invalid_branch_message="\nI'm sorry, Dave. I'm afraid I can't do that.
 The branch name \033[1;31m$current_branch_name\033[0m does not adhere to the semantic naming convention. It should match this regular expression:
 \t\033[1;34m$branch_name_regex\033[0m\nIn human terms that's:
 \t\033[1;34m$branch_template\033[0m
-eg. \033[1;32m$branch_example1\033[0m or \033[1;32m$branch_example2\033[0m
+e.g. \033[1;32m$branch_example1\033[0m or \033[1;32m$branch_example2\033[0m
 
-Oh, and if you're an external contributor, use the following template:\n\t\033[1;35m$external_branch_template\033[0m
+Oh, and if you're an external contributor, use the following template: \033[1;35m$external_branch_template\033[0m e.g. \033[1;32m$external_branch_example\033[0m
 
 Please rename your branch accordingly and try again."
 
